@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--MainView-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainView" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GreenHub_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="GreenHub" id="PNb-ij-9V2"/>
+                        <button width="1" alignment="left" title="Scheduled recycles" id="VGN-us-6G6">
+                            <connections>
+                                <segue destination="zEv-GB-Lwp" kind="push" id="fVO-2x-iRb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Configured plants" id="482-YS-qly">
+                            <connections>
+                                <segue destination="rwa-xc-h7w" kind="push" id="UAe-Vq-XPz"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--GreenHub-->
+        <scene sceneID="QhM-vQ-09X">
+            <objects>
+                <controller identifier="RecycleView" title="GreenHub" id="zEv-GB-Lwp" customClass="RecycleViewController" customModule="GreenHub_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Active recycles:" id="NLy-37-VSM"/>
+                        <table alignment="left" id="e4E-Gz-11Y">
+                            <items>
+                                <tableRow identifier="RecycleRow" selectable="NO" id="OtJ-Qz-hhW" customClass="RecycleRow" customModule="GreenHub_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="44" alignment="left" layout="vertical" id="vav-EZ-hTn">
+                                        <items>
+                                            <label alignment="center" text="cityName" textAlignment="left" id="fqP-8y-mhU">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="center" verticalAlignment="bottom" text="Label" id="MzQ-70-Bkb">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cityName" destination="fqP-8y-mhU" id="9W9-cg-OP1"/>
+                                        <outlet property="today" destination="MzQ-70-Bkb" id="qrY-Xt-cIR"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Dismiss all notifications" id="0yT-f8-Svo">
+                            <connections>
+                                <action selector="dismissAllRecycles" destination="zEv-GB-Lwp" id="ysz-X3-fLW"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="recycleTable" destination="e4E-Gz-11Y" id="j1P-g7-Tx4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="636" y="152"/>
+        </scene>
+        <!--GreenHub-->
+        <scene sceneID="6P6-um-143">
+            <objects>
+                <controller identifier="PlantView" title="GreenHub" id="rwa-xc-h7w" customClass="PlantViewController" customModule="GreenHub_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Active plants:" id="Ohe-zY-4U1"/>
+                        <table alignment="left" id="tkT-ao-957">
+                            <items>
+                                <tableRow identifier="PlantRow" id="ibn-Bg-oFm" userLabel="PlantRow" customClass="PlantRow" customModule="GreenHub_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="44" alignment="left" layout="vertical" id="s37-1b-ZEG">
+                                        <items>
+                                            <label alignment="center" text="plantName" textAlignment="center" id="n6J-0s-ns9">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="center" text="Label" id="Jao-Bh-uzP" userLabel="kind"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="plantKind" destination="Jao-Bh-uzP" id="i5m-1e-5mn"/>
+                                        <outlet property="plantName" destination="n6J-0s-ns9" id="ccX-Z1-OXI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Dismiss all notifications" id="qPJ-0D-Pcj">
+                            <connections>
+                                <action selector="dismissAllPlants" destination="rwa-xc-h7w" id="PqH-mO-AB0"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="plantTable" destination="tkT-ao-957" id="G5k-SH-Or2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="636" y="607"/>
+        </scene>
+    </scenes>
+</document>

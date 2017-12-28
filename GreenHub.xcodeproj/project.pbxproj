@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8510D42F1F2FABAF00145895 /* WDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D42E1F2FABAF00145895 /* WDBManager.swift */; };
+		8510D4321F2FB0F800145895 /* RecycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D4311F2FB0F800145895 /* RecycleViewController.swift */; };
+		8510D4341F2FB1A300145895 /* RecycleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D4331F2FB1A300145895 /* RecycleRow.swift */; };
+		8510D4391F2FB80B00145895 /* WTimeStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D4381F2FB80B00145895 /* WTimeStuff.swift */; };
+		85130ED61F2CA58300E2348A /* ReceiveGPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85130ED51F2CA58300E2348A /* ReceiveGPViewController.swift */; };
+		85130EF01F2CB0B800E2348A /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85130EEF1F2CB0B800E2348A /* QRReaderViewController.swift */; };
+		85130EF21F2CD9C700E2348A /* GPSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85130EF11F2CD9C700E2348A /* GPSendViewController.swift */; };
+		85191D841F2BB92D00E529B0 /* RecycleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85191D831F2BB92D00E529B0 /* RecycleDetailsViewController.swift */; };
+		85191D861F2BBD1400E529B0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85191D851F2BBD1400E529B0 /* NotificationManager.swift */; };
+		85191D881F2BDE0400E529B0 /* GreenPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85191D871F2BDE0400E529B0 /* GreenPointsViewController.swift */; };
+		85191D8C1F2BE46400E529B0 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85191D8B1F2BE46400E529B0 /* SettingsManager.swift */; };
+		852A502C1F2B7EA200AB246C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A502B1F2B7EA200AB246C /* AppDelegate.swift */; };
+		852A50311F2B7EA200AB246C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852A502F1F2B7EA200AB246C /* Main.storyboard */; };
+		852A50331F2B7EA200AB246C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852A50321F2B7EA200AB246C /* Assets.xcassets */; };
+		852A50361F2B7EA200AB246C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852A50341F2B7EA200AB246C /* LaunchScreen.storyboard */; };
+		852A503B1F2B7EA200AB246C /* GreenHub WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 852A503A1F2B7EA200AB246C /* GreenHub WatchKit App.app */; };
+		852A50411F2B7EA200AB246C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852A503F1F2B7EA200AB246C /* Interface.storyboard */; };
+		852A50431F2B7EA200AB246C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852A50421F2B7EA200AB246C /* Assets.xcassets */; };
+		852A504A1F2B7EA200AB246C /* GreenHub WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 852A50491F2B7EA200AB246C /* GreenHub WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		852A50511F2B7EA200AB246C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A50501F2B7EA200AB246C /* InterfaceController.swift */; };
+		852A50531F2B7EA200AB246C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A50521F2B7EA200AB246C /* ExtensionDelegate.swift */; };
+		852A50551F2B7EA200AB246C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A50541F2B7EA200AB246C /* NotificationController.swift */; };
+		852A50571F2B7EA200AB246C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852A50561F2B7EA200AB246C /* Assets.xcassets */; };
+		852A506B1F2B7F3C00AB246C /* GreenHubDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 852A50681F2B7EE700AB246C /* GreenHubDB.xcdatamodeld */; };
+		852A506D1F2B83D800AB246C /* RecycleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A506C1F2B83D800AB246C /* RecycleTableViewController.swift */; };
+		852A506F1F2B847A00AB246C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A506E1F2B847A00AB246C /* DBManager.swift */; };
+		852A50731F2B879900AB246C /* TimeStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A50721F2B879900AB246C /* TimeStuff.swift */; };
+		852A50751F2B893100AB246C /* RecycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A50741F2B893100AB246C /* RecycleCell.swift */; };
+		852A50771F2B92E300AB246C /* AddRecycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852A50761F2B92E300AB246C /* AddRecycleViewController.swift */; };
+		85F4D7DB1F306C7D0063F0EA /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D7DA1F306C7D0063F0EA /* PlantCell.swift */; };
+		85F4D7E01F30713D0063F0EA /* GrowingPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D7DF1F30713D0063F0EA /* GrowingPlantsViewController.swift */; };
+		85F4D7E21F307ABD0063F0EA /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D7E11F307ABD0063F0EA /* AddPlantViewController.swift */; };
+		85F4D7E41F3087970063F0EA /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D7E31F3087970063F0EA /* PlantDetailsViewController.swift */; };
+		85F4D7E61F30B6C40063F0EA /* PlantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D7E51F30B6C40063F0EA /* PlantRow.swift */; };
+		85F4D7E81F30B8AB0063F0EA /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D7E71F30B8AB0063F0EA /* PlantViewController.swift */; };
+		85FA82771F2F82F200A470CF /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA82761F2F82F200A470CF /* ConnectivityManager.swift */; };
+		85FA82791F2F846B00A470CF /* WConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA82781F2F846B00A470CF /* WConnectivityManager.swift */; };
+		85FA827E1F2F919400A470CF /* WGreenHubDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85FA827B1F2F910000A470CF /* WGreenHubDB.xcdatamodeld */; };
+		DCAE3BCD03368AD9D953EE85 /* Pods_GreenHub_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BC0AB3B7F037F36F69B867 /* Pods_GreenHub_WatchKit_Extension.framework */; };
+		F1DF1AE7355ACF2D67CEFCC0 /* Pods_GreenHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E536BCA2EBDBB631AC6A7A73 /* Pods_GreenHub.framework */; };
+		F7F89AA6310B6C329D91DA5C /* Pods_GreenHub_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765DDA2CE440A0C79BDA9419 /* Pods_GreenHub_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		852A503C1F2B7EA200AB246C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 852A50201F2B7EA200AB246C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 852A50391F2B7EA200AB246C;
+			remoteInfo = "GreenHub WatchKit App";
+		};
+		852A504B1F2B7EA200AB246C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 852A50201F2B7EA200AB246C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 852A50481F2B7EA200AB246C;
+			remoteInfo = "GreenHub WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		852A505E1F2B7EA200AB246C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				852A504A1F2B7EA200AB246C /* GreenHub WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852A50621F2B7EA200AB246C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				852A503B1F2B7EA200AB246C /* GreenHub WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		064BA39C64E1A477AAEA69B3 /* Pods-GreenHub WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenHub WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenHub WatchKit Extension/Pods-GreenHub WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		09F7F34B5262EE7359A1CFC8 /* Pods-GreenHub WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenHub WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenHub WatchKit Extension/Pods-GreenHub WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4F21EA49756DF196EC268ABF /* Pods-GreenHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenHub/Pods-GreenHub.release.xcconfig"; sourceTree = "<group>"; };
+		765DDA2CE440A0C79BDA9419 /* Pods_GreenHub_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenHub_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8510D42E1F2FABAF00145895 /* WDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDBManager.swift; sourceTree = "<group>"; };
+		8510D4311F2FB0F800145895 /* RecycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleViewController.swift; sourceTree = "<group>"; };
+		8510D4331F2FB1A300145895 /* RecycleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleRow.swift; sourceTree = "<group>"; };
+		8510D4381F2FB80B00145895 /* WTimeStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTimeStuff.swift; sourceTree = "<group>"; };
+		85130ED51F2CA58300E2348A /* ReceiveGPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveGPViewController.swift; sourceTree = "<group>"; };
+		85130EEF1F2CB0B800E2348A /* QRReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
+		85130EF11F2CD9C700E2348A /* GPSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSendViewController.swift; sourceTree = "<group>"; };
+		85191D831F2BB92D00E529B0 /* RecycleDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleDetailsViewController.swift; sourceTree = "<group>"; };
+		85191D851F2BBD1400E529B0 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		85191D871F2BDE0400E529B0 /* GreenPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenPointsViewController.swift; sourceTree = "<group>"; };
+		85191D8B1F2BE46400E529B0 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		852A50281F2B7EA200AB246C /* GreenHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852A502B1F2B7EA200AB246C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		852A50301F2B7EA200AB246C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		852A50321F2B7EA200AB246C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		852A50351F2B7EA200AB246C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		852A50371F2B7EA200AB246C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852A503A1F2B7EA200AB246C /* GreenHub WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GreenHub WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		852A50401F2B7EA200AB246C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		852A50421F2B7EA200AB246C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		852A50441F2B7EA200AB246C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852A50491F2B7EA200AB246C /* GreenHub WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GreenHub WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		852A504F1F2B7EA200AB246C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		852A50501F2B7EA200AB246C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		852A50521F2B7EA200AB246C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		852A50541F2B7EA200AB246C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		852A50561F2B7EA200AB246C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		852A50581F2B7EA200AB246C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852A50691F2B7EE700AB246C /* GreenHubDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GreenHubDB.xcdatamodel; sourceTree = "<group>"; };
+		852A506C1F2B83D800AB246C /* RecycleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleTableViewController.swift; sourceTree = "<group>"; };
+		852A506E1F2B847A00AB246C /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		852A50721F2B879900AB246C /* TimeStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStuff.swift; sourceTree = "<group>"; };
+		852A50741F2B893100AB246C /* RecycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleCell.swift; sourceTree = "<group>"; };
+		852A50761F2B92E300AB246C /* AddRecycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecycleViewController.swift; sourceTree = "<group>"; };
+		85F4D7DA1F306C7D0063F0EA /* PlantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		85F4D7DF1F30713D0063F0EA /* GrowingPlantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrowingPlantsViewController.swift; sourceTree = "<group>"; };
+		85F4D7E11F307ABD0063F0EA /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
+		85F4D7E31F3087970063F0EA /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
+		85F4D7E51F30B6C40063F0EA /* PlantRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantRow.swift; sourceTree = "<group>"; };
+		85F4D7E71F30B8AB0063F0EA /* PlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		85FA82761F2F82F200A470CF /* ConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		85FA82781F2F846B00A470CF /* WConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WConnectivityManager.swift; sourceTree = "<group>"; };
+		85FA827C1F2F910000A470CF /* WGreenHubDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WGreenHubDB.xcdatamodel; sourceTree = "<group>"; };
+		A01A135B19E88C287636D8C3 /* Pods-GreenHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenHub/Pods-GreenHub.debug.xcconfig"; sourceTree = "<group>"; };
+		D2BC0AB3B7F037F36F69B867 /* Pods_GreenHub_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenHub_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA79F1ADD0841E522C51BCD6 /* Pods-GreenHub WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenHub WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenHub WatchKit App/Pods-GreenHub WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		DD393D09020F8F4AD2216738 /* Pods-GreenHub WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenHub WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenHub WatchKit App/Pods-GreenHub WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		E536BCA2EBDBB631AC6A7A73 /* Pods_GreenHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852A50251F2B7EA200AB246C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DF1AE7355ACF2D67CEFCC0 /* Pods_GreenHub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852A50461F2B7EA200AB246C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAE3BCD03368AD9D953EE85 /* Pods_GreenHub_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1E4DCE896FA8499005BCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F89AA6310B6C329D91DA5C /* Pods_GreenHub_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1938C7B725C8846D447F6265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A01A135B19E88C287636D8C3 /* Pods-GreenHub.debug.xcconfig */,
+				4F21EA49756DF196EC268ABF /* Pods-GreenHub.release.xcconfig */,
+				DD393D09020F8F4AD2216738 /* Pods-GreenHub WatchKit App.debug.xcconfig */,
+				DA79F1ADD0841E522C51BCD6 /* Pods-GreenHub WatchKit App.release.xcconfig */,
+				064BA39C64E1A477AAEA69B3 /* Pods-GreenHub WatchKit Extension.debug.xcconfig */,
+				09F7F34B5262EE7359A1CFC8 /* Pods-GreenHub WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8510D4301F2FB0B800145895 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				852A50501F2B7EA200AB246C /* InterfaceController.swift */,
+				8510D4311F2FB0F800145895 /* RecycleViewController.swift */,
+				8510D4331F2FB1A300145895 /* RecycleRow.swift */,
+				85F4D7E51F30B6C40063F0EA /* PlantRow.swift */,
+				85F4D7E71F30B8AB0063F0EA /* PlantViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		852A501F1F2B7EA200AB246C = {
+			isa = PBXGroup;
+			children = (
+				852A502A1F2B7EA200AB246C /* GreenHub */,
+				852A503E1F2B7EA200AB246C /* GreenHub WatchKit App */,
+				852A504D1F2B7EA200AB246C /* GreenHub WatchKit Extension */,
+				852A50291F2B7EA200AB246C /* Products */,
+				1938C7B725C8846D447F6265 /* Pods */,
+				8684BB11F691B255C63E2F81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		852A50291F2B7EA200AB246C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				852A50281F2B7EA200AB246C /* GreenHub.app */,
+				852A503A1F2B7EA200AB246C /* GreenHub WatchKit App.app */,
+				852A50491F2B7EA200AB246C /* GreenHub WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		852A502A1F2B7EA200AB246C /* GreenHub */ = {
+			isa = PBXGroup;
+			children = (
+				852A50671F2B7EC100AB246C /* View */,
+				852A50661F2B7EB100AB246C /* Model */,
+				852A502F1F2B7EA200AB246C /* Main.storyboard */,
+				852A50321F2B7EA200AB246C /* Assets.xcassets */,
+				852A50341F2B7EA200AB246C /* LaunchScreen.storyboard */,
+				852A50371F2B7EA200AB246C /* Info.plist */,
+			);
+			path = GreenHub;
+			sourceTree = "<group>";
+		};
+		852A503E1F2B7EA200AB246C /* GreenHub WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				852A503F1F2B7EA200AB246C /* Interface.storyboard */,
+				852A50421F2B7EA200AB246C /* Assets.xcassets */,
+				852A50441F2B7EA200AB246C /* Info.plist */,
+			);
+			path = "GreenHub WatchKit App";
+			sourceTree = "<group>";
+		};
+		852A504D1F2B7EA200AB246C /* GreenHub WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8510D4301F2FB0B800145895 /* View */,
+				85FA827A1F2F90BE00A470CF /* Model */,
+				852A50561F2B7EA200AB246C /* Assets.xcassets */,
+				852A50581F2B7EA200AB246C /* Info.plist */,
+				852A504E1F2B7EA200AB246C /* Supporting Files */,
+			);
+			path = "GreenHub WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		852A504E1F2B7EA200AB246C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				852A504F1F2B7EA200AB246C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		852A50661F2B7EB100AB246C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				852A502B1F2B7EA200AB246C /* AppDelegate.swift */,
+				852A50681F2B7EE700AB246C /* GreenHubDB.xcdatamodeld */,
+				852A506E1F2B847A00AB246C /* DBManager.swift */,
+				852A50721F2B879900AB246C /* TimeStuff.swift */,
+				85191D851F2BBD1400E529B0 /* NotificationManager.swift */,
+				85191D8B1F2BE46400E529B0 /* SettingsManager.swift */,
+				85FA82761F2F82F200A470CF /* ConnectivityManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		852A50671F2B7EC100AB246C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85F4D7DE1F306CAB0063F0EA /* GP */,
+				85F4D7DD1F306C9E0063F0EA /* Plant */,
+				85F4D7DC1F306C870063F0EA /* Recycle */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		85F4D7DC1F306C870063F0EA /* Recycle */ = {
+			isa = PBXGroup;
+			children = (
+				852A506C1F2B83D800AB246C /* RecycleTableViewController.swift */,
+				852A50741F2B893100AB246C /* RecycleCell.swift */,
+				852A50761F2B92E300AB246C /* AddRecycleViewController.swift */,
+				85191D831F2BB92D00E529B0 /* RecycleDetailsViewController.swift */,
+			);
+			name = Recycle;
+			sourceTree = "<group>";
+		};
+		85F4D7DD1F306C9E0063F0EA /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				85F4D7DA1F306C7D0063F0EA /* PlantCell.swift */,
+				85F4D7DF1F30713D0063F0EA /* GrowingPlantsViewController.swift */,
+				85F4D7E11F307ABD0063F0EA /* AddPlantViewController.swift */,
+				85F4D7E31F3087970063F0EA /* PlantDetailsViewController.swift */,
+			);
+			name = Plant;
+			sourceTree = "<group>";
+		};
+		85F4D7DE1F306CAB0063F0EA /* GP */ = {
+			isa = PBXGroup;
+			children = (
+				85130ED51F2CA58300E2348A /* ReceiveGPViewController.swift */,
+				85130EEF1F2CB0B800E2348A /* QRReaderViewController.swift */,
+				85130EF11F2CD9C700E2348A /* GPSendViewController.swift */,
+				85191D871F2BDE0400E529B0 /* GreenPointsViewController.swift */,
+			);
+			name = GP;
+			sourceTree = "<group>";
+		};
+		85FA827A1F2F90BE00A470CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				852A50521F2B7EA200AB246C /* ExtensionDelegate.swift */,
+				852A50541F2B7EA200AB246C /* NotificationController.swift */,
+				85FA82781F2F846B00A470CF /* WConnectivityManager.swift */,
+				85FA827B1F2F910000A470CF /* WGreenHubDB.xcdatamodeld */,
+				8510D42E1F2FABAF00145895 /* WDBManager.swift */,
+				8510D4381F2FB80B00145895 /* WTimeStuff.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8684BB11F691B255C63E2F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E536BCA2EBDBB631AC6A7A73 /* Pods_GreenHub.framework */,
+				765DDA2CE440A0C79BDA9419 /* Pods_GreenHub_WatchKit_App.framework */,
+				D2BC0AB3B7F037F36F69B867 /* Pods_GreenHub_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		852A50271F2B7EA200AB246C /* GreenHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852A50631F2B7EA200AB246C /* Build configuration list for PBXNativeTarget "GreenHub" */;
+			buildPhases = (
+				971E0F7E09EE6A3DA7D93DD2 /* [CP] Check Pods Manifest.lock */,
+				852A50241F2B7EA200AB246C /* Sources */,
+				852A50251F2B7EA200AB246C /* Frameworks */,
+				852A50261F2B7EA200AB246C /* Resources */,
+				852A50621F2B7EA200AB246C /* Embed Watch Content */,
+				D79B8F6DA192D5B3CA7D5792 /* [CP] Embed Pods Frameworks */,
+				7858B8D3260CDF35E5B23B60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				852A503D1F2B7EA200AB246C /* PBXTargetDependency */,
+			);
+			name = GreenHub;
+			productName = GreenHub;
+			productReference = 852A50281F2B7EA200AB246C /* GreenHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		852A50391F2B7EA200AB246C /* GreenHub WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852A505F1F2B7EA200AB246C /* Build configuration list for PBXNativeTarget "GreenHub WatchKit App" */;
+			buildPhases = (
+				82881F1884FCD136880D6EB0 /* [CP] Check Pods Manifest.lock */,
+				852A50381F2B7EA200AB246C /* Resources */,
+				852A505E1F2B7EA200AB246C /* Embed App Extensions */,
+				BA1E4DCE896FA8499005BCBF /* Frameworks */,
+				EE3923A374F170931E754002 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				852A504C1F2B7EA200AB246C /* PBXTargetDependency */,
+			);
+			name = "GreenHub WatchKit App";
+			productName = "GreenHub WatchKit App";
+			productReference = 852A503A1F2B7EA200AB246C /* GreenHub WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		852A50481F2B7EA200AB246C /* GreenHub WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852A505B1F2B7EA200AB246C /* Build configuration list for PBXNativeTarget "GreenHub WatchKit Extension" */;
+			buildPhases = (
+				6A2B20EB4BEE4673BF20696F /* [CP] Check Pods Manifest.lock */,
+				852A50451F2B7EA200AB246C /* Sources */,
+				852A50461F2B7EA200AB246C /* Frameworks */,
+				852A50471F2B7EA200AB246C /* Resources */,
+				28B17E425E9BC4890D5E619E /* [CP] Embed Pods Frameworks */,
+				AB9260AF06FD2132E6153154 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GreenHub WatchKit Extension";
+			productName = "GreenHub WatchKit Extension";
+			productReference = 852A50491F2B7EA200AB246C /* GreenHub WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		852A50201F2B7EA200AB246C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Arturo Iafrate";
+				TargetAttributes = {
+					852A50271F2B7EA200AB246C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G95K5W55YS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					852A50391F2B7EA200AB246C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G95K5W55YS;
+						ProvisioningStyle = Automatic;
+					};
+					852A50481F2B7EA200AB246C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G95K5W55YS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 852A50231F2B7EA200AB246C /* Build configuration list for PBXProject "GreenHub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 852A501F1F2B7EA200AB246C;
+			productRefGroup = 852A50291F2B7EA200AB246C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				852A50271F2B7EA200AB246C /* GreenHub */,
+				852A50391F2B7EA200AB246C /* GreenHub WatchKit App */,
+				852A50481F2B7EA200AB246C /* GreenHub WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		852A50261F2B7EA200AB246C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A50361F2B7EA200AB246C /* LaunchScreen.storyboard in Resources */,
+				852A50331F2B7EA200AB246C /* Assets.xcassets in Resources */,
+				852A50311F2B7EA200AB246C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852A50381F2B7EA200AB246C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A50431F2B7EA200AB246C /* Assets.xcassets in Resources */,
+				852A50411F2B7EA200AB246C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852A50471F2B7EA200AB246C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A50571F2B7EA200AB246C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B17E425E9BC4890D5E619E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenHub WatchKit Extension/Pods-GreenHub WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A2B20EB4BEE4673BF20696F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7858B8D3260CDF35E5B23B60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenHub/Pods-GreenHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82881F1884FCD136880D6EB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		971E0F7E09EE6A3DA7D93DD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9260AF06FD2132E6153154 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenHub WatchKit Extension/Pods-GreenHub WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79B8F6DA192D5B3CA7D5792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenHub/Pods-GreenHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3923A374F170931E754002 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenHub WatchKit App/Pods-GreenHub WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		852A50241F2B7EA200AB246C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A506D1F2B83D800AB246C /* RecycleTableViewController.swift in Sources */,
+				85130EF21F2CD9C700E2348A /* GPSendViewController.swift in Sources */,
+				852A50751F2B893100AB246C /* RecycleCell.swift in Sources */,
+				85FA82771F2F82F200A470CF /* ConnectivityManager.swift in Sources */,
+				852A506B1F2B7F3C00AB246C /* GreenHubDB.xcdatamodeld in Sources */,
+				85191D861F2BBD1400E529B0 /* NotificationManager.swift in Sources */,
+				85F4D7E21F307ABD0063F0EA /* AddPlantViewController.swift in Sources */,
+				852A502C1F2B7EA200AB246C /* AppDelegate.swift in Sources */,
+				85130EF01F2CB0B800E2348A /* QRReaderViewController.swift in Sources */,
+				852A50731F2B879900AB246C /* TimeStuff.swift in Sources */,
+				85F4D7DB1F306C7D0063F0EA /* PlantCell.swift in Sources */,
+				85191D841F2BB92D00E529B0 /* RecycleDetailsViewController.swift in Sources */,
+				852A50771F2B92E300AB246C /* AddRecycleViewController.swift in Sources */,
+				852A506F1F2B847A00AB246C /* DBManager.swift in Sources */,
+				85F4D7E01F30713D0063F0EA /* GrowingPlantsViewController.swift in Sources */,
+				85130ED61F2CA58300E2348A /* ReceiveGPViewController.swift in Sources */,
+				85F4D7E41F3087970063F0EA /* PlantDetailsViewController.swift in Sources */,
+				85191D8C1F2BE46400E529B0 /* SettingsManager.swift in Sources */,
+				85191D881F2BDE0400E529B0 /* GreenPointsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852A50451F2B7EA200AB246C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FA827E1F2F919400A470CF /* WGreenHubDB.xcdatamodeld in Sources */,
+				85FA82791F2F846B00A470CF /* WConnectivityManager.swift in Sources */,
+				8510D4341F2FB1A300145895 /* RecycleRow.swift in Sources */,
+				852A50551F2B7EA200AB246C /* NotificationController.swift in Sources */,
+				8510D4321F2FB0F800145895 /* RecycleViewController.swift in Sources */,
+				852A50531F2B7EA200AB246C /* ExtensionDelegate.swift in Sources */,
+				852A50511F2B7EA200AB246C /* InterfaceController.swift in Sources */,
+				8510D42F1F2FABAF00145895 /* WDBManager.swift in Sources */,
+				85F4D7E61F30B6C40063F0EA /* PlantRow.swift in Sources */,
+				8510D4391F2FB80B00145895 /* WTimeStuff.swift in Sources */,
+				85F4D7E81F30B8AB0063F0EA /* PlantViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		852A503D1F2B7EA200AB246C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 852A50391F2B7EA200AB246C /* GreenHub WatchKit App */;
+			targetProxy = 852A503C1F2B7EA200AB246C /* PBXContainerItemProxy */;
+		};
+		852A504C1F2B7EA200AB246C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 852A50481F2B7EA200AB246C /* GreenHub WatchKit Extension */;
+			targetProxy = 852A504B1F2B7EA200AB246C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		852A502F1F2B7EA200AB246C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852A50301F2B7EA200AB246C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		852A50341F2B7EA200AB246C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852A50351F2B7EA200AB246C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		852A503F1F2B7EA200AB246C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852A50401F2B7EA200AB246C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		852A50591F2B7EA200AB246C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		852A505A1F2B7EA200AB246C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		852A505C1F2B7EA200AB246C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064BA39C64E1A477AAEA69B3 /* Pods-GreenHub WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = G95K5W55YS;
+				INFOPLIST_FILE = "GreenHub WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.ingreenapps.GreenHub.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		852A505D1F2B7EA200AB246C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F7F34B5262EE7359A1CFC8 /* Pods-GreenHub WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = G95K5W55YS;
+				INFOPLIST_FILE = "GreenHub WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.ingreenapps.GreenHub.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		852A50601F2B7EA200AB246C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD393D09020F8F4AD2216738 /* Pods-GreenHub WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G95K5W55YS;
+				IBSC_MODULE = GreenHub_WatchKit_Extension;
+				INFOPLIST_FILE = "GreenHub WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.ingreenapps.GreenHub.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		852A50611F2B7EA200AB246C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA79F1ADD0841E522C51BCD6 /* Pods-GreenHub WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G95K5W55YS;
+				IBSC_MODULE = GreenHub_WatchKit_Extension;
+				INFOPLIST_FILE = "GreenHub WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.ingreenapps.GreenHub.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		852A50641F2B7EA200AB246C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01A135B19E88C287636D8C3 /* Pods-GreenHub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G95K5W55YS;
+				INFOPLIST_FILE = GreenHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.ingreenapps.GreenHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		852A50651F2B7EA200AB246C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F21EA49756DF196EC268ABF /* Pods-GreenHub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G95K5W55YS;
+				INFOPLIST_FILE = GreenHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.ingreenapps.GreenHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		852A50231F2B7EA200AB246C /* Build configuration list for PBXProject "GreenHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A50591F2B7EA200AB246C /* Debug */,
+				852A505A1F2B7EA200AB246C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852A505B1F2B7EA200AB246C /* Build configuration list for PBXNativeTarget "GreenHub WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A505C1F2B7EA200AB246C /* Debug */,
+				852A505D1F2B7EA200AB246C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852A505F1F2B7EA200AB246C /* Build configuration list for PBXNativeTarget "GreenHub WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A50601F2B7EA200AB246C /* Debug */,
+				852A50611F2B7EA200AB246C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852A50631F2B7EA200AB246C /* Build configuration list for PBXNativeTarget "GreenHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A50641F2B7EA200AB246C /* Debug */,
+				852A50651F2B7EA200AB246C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		852A50681F2B7EE700AB246C /* GreenHubDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				852A50691F2B7EE700AB246C /* GreenHubDB.xcdatamodel */,
+			);
+			currentVersion = 852A50691F2B7EE700AB246C /* GreenHubDB.xcdatamodel */;
+			path = GreenHubDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		85FA827B1F2F910000A470CF /* WGreenHubDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85FA827C1F2F910000A470CF /* WGreenHubDB.xcdatamodel */,
+			);
+			currentVersion = 85FA827C1F2F910000A470CF /* WGreenHubDB.xcdatamodel */;
+			path = WGreenHubDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 852A50201F2B7EA200AB246C /* Project object */;
+}
